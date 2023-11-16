@@ -526,7 +526,6 @@ left: 95px;
 }
 
 .install__desc.desc {
-    width: 586px;
     color: #FFF;
     margin-top: 18px;
 }
@@ -534,6 +533,18 @@ left: 95px;
 .install__row {
     display: flex;
     column-gap: 28px;
+}
+
+.install__desc.desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/* Blog */
+.blog {
+    margin-top: 170px;
 }
 
 .blog__image {
@@ -548,10 +559,6 @@ left: 95px;
     border-radius: 12px 12px 0px 0px;
 }
 
-/* Blog */
-.blog {
-    margin-top: 170px;
-}
 
 .blog__left-link {
     color: #10375C;
@@ -601,6 +608,10 @@ left: 95px;
 }
 
 .blog__desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
     color: #575F66;
     font-size: 1.4rem;
     font-weight: 300;

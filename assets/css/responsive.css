@@ -18,10 +18,18 @@
         line-height: 28px;
         margin-top: 8px;
         font-size: 1.6rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
     }
 
     .work__desc {
         width: 100%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
     }
 
     .about__body {
@@ -40,7 +48,6 @@
     }
     
     .install__right {
-        padding: 20px;
         width: 100%;
     }
 
@@ -81,6 +88,10 @@
 
     .work__list {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .install__right {
+        padding: 50px;
     }
 }
 
@@ -178,6 +189,10 @@
     .install__heading {
         width: 100%;
         font-size: 3.5rem;
+    }
+
+    .install__right {
+        padding: 24px;
     }
 
     .row.blog__body {
