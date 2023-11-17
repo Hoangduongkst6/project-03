@@ -132,7 +132,7 @@ body {
 }
 
 
-.bars__input:checked ~ .bars .bars__open {
+#checkbox__input:checked ~ .bars .bars__open {
     display: none;
 }
 
@@ -140,7 +140,7 @@ body {
     display: none;
 }
 
-.bars__input:checked ~ .bars .bars__close {
+#checkbox__input:checked ~ .bars .bars__close {
     display: block;
 }
 
