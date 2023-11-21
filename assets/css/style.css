@@ -147,8 +147,7 @@ body {
 .menu__drawer {
     position: fixed;
     background: var(--primary-color);
-    background: rgba(16, 55, 92, .6);
-    backdrop-filter: blur(50px);
+    background: rgb(16, 55, 92);
     left: 0;
     right: 0;
     top: var(--header-height);
@@ -160,6 +159,13 @@ body {
     transition: .3s ease;
 }
 
+@supports (backdrop-filter: blur(50px)) or (-webkit-backdrop-filter: blur(50px)) {
+    .menu__drawer {
+        background-color: rgba(16, 55, 92, 0.6);
+        backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(50px);
+    }
+}
 .bars__input:checked ~ .menu__drawer {
     height: 28.8rem;
 }
